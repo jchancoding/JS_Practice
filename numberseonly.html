@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by anonymous (http://jsbin.com/tesolutovu/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript" >
+"use strict";
+
+function numbOnly(arr) {
+  var newArray = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === "number") {
+      newArray.push(arr[i]);
+    }
+  }
+  console.log(newArray);
+}
+
+numbOnly(["String cheese", 6, 8, "panda", 9, 2, "Cup"]);
+
+</script>
+</body>
+</html>
