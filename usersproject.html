@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="users.css">
+  <title>User Table</title>
+
+<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    //Submit is clicked, submit text inputs
+    $('#submit').click(function(){
+      $('form input').submit();
+      console.log('yattakitaze!!!');
+      $('#subs tbody').append("<tr><td>" + $("#fname").val() + "</td><td>" + $("#lname").val() + "</td><td>" + $("#email").val() + "</td><td>" + $("#contact").val() + "</td></tr>");
+      return false;
+      })
+    })
+
+</script>
+
+</head>
+<body>
+
+<table id="subs">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email Address</th>
+    <th>Contact #</th>
+  </tr>
+</table>
+
+<div class="submission">
+  <form class="add_user" action="success.html" method="post">
+    <h1>Add User</h1>
+    <hr>
+    <br>
+    <p>First Name:</p><input type="text" name="f_name" value="First Name" id="fname">
+    <p>Last Name:</p><input type="text" name="l_name" value="Last Name" id="lname">
+    <p>Email Address:</p><input type="text" name="e_address" value="Address" id="email">
+    <p>Contact No.:</p><input type="text" name="contact" value="Contact" id="contact">
+  </form>
+  <input type="submit" name="Add User" value="Add User" id="submit">
+</div>
+
+</body>
+</html>

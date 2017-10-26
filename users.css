@@ -1,0 +1,54 @@
+
+body{
+  font-family: sans-serif;
+}
+.submission{
+  border: 2px solid black;
+  height: 400px;
+  width: 320px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+form p{
+  height: 22px;
+}
+form input{
+  float: right;
+  display: inline-block;
+}
+#submit{
+  margin-top: 30px;
+  display: inline-block;
+}
+textarea{
+  height: 100px;
+  width: 173px;
+  float: right;
+}
+.cards{
+  padding: 0px 10px;
+  background-color: gainsboro;
+  width: 600px;
+  display: inline-block;
+}
+.fucards{
+  border: 2px solid red;
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+}
+.bucards{
+  border: 2px solid red;
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  display: none;
+}
+.cdesc{
+  margin: 0px auto;
+  height: 60px;
+  width: 200px;
+}

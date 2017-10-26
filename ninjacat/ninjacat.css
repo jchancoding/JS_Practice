@@ -1,0 +1,16 @@
+h1{
+  font-family: sans-serif;
+}
+.box{
+  width: 201px;
+  padding: 10px;
+  display: inline-block;
+}
+img{
+  width: 181px;
+  display: inline-block;
+}
+button{
+  height: 20px;
+  display: inline-block;
+}

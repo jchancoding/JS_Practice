@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="wutface.css">
+  <title>JQuery Demo</title>
+
+<script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+  })
+$('button').click(function(){
+  alert("you have clicked a button!");
+});
+</script>
+
+</head>
+<body>
+
+<h1>jQuery - Assignment 1</h1>
+
+<div class="box">
+  <img src="wut.jpg" alt="WUTFACE">
+  <img src="wut.jpg" alt="WUTFACE">
+  <img src="wut.jpg" alt="WUTFACE">
+  <img src="wut.jpg" alt="WUTFACE">
+  <img src="wut.jpg" alt="WUTFACE">
+  <img src="wut.jpg" alt="WUTFACE">
+  <img src="wut.jpg" alt="WUTFACE">
+  <img src="wut.jpg" alt="WUTFACE">
+</div>
+
+<button type="button" name="restore">STOP THAT</button>
+
+<script>
+$("img").click(function() {
+  $(this).fadeOut("slow");
+});
+$("button").click(function() {
+  $("img").show();
+});
+</script>
+
+</body>
+</html>
